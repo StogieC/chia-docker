@@ -15,7 +15,7 @@ if [[ ${keys} == "generate" ]]; then
 elif [[ ${keys} == "copy" ]]; then
   if [[ -z ${ca} ]]; then
     echo "A path to a copy of the farmer peer's ssl/ca required."
-	exit
+    exit
   else
   chia init -c ${ca}
   fi
